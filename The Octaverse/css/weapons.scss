@@ -1,0 +1,363 @@
+.market {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &__tab {
+    position: absolute;
+    width: 360px;
+    z-index: 2;
+    margin-top: 25px;
+
+    span {
+      font-family: $font-base
+    }
+
+    button {
+      &:first-child {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 30px;
+      }
+      &:last-child {
+        border-top-right-radius: 8px;
+        border-top-left-radius: 30px;
+      }
+    }
+
+    .MuiTabs-indicator {
+      display: none;
+      bottom: 3px;
+      background-color: $color-17;
+    }
+
+    .Mui-selected {
+      background-color: $color-8;
+    }
+  }
+
+  &__input {
+    width: 100%;
+
+    .MuiOutlinedInput-root {
+      padding: 9px;
+    }
+  }
+
+  &__filter {
+    width: 360px;
+    background-color: $color-8;
+    border-radius: 8px;
+    padding: 30px 20px 10px;
+    margin: 69px 0 20px;
+
+    &-container {
+      position: sticky;
+      top: -50px;
+    }
+
+    &-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+
+    &-title {
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 15px;
+      text-align: center;
+      text-transform: capitalize;
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 8px;
+        border-top: 1px dashed grey;
+      }
+
+      span {
+        padding: 0 15px;
+        background-color: $color-8;
+        position: relative;
+        z-index: 2;
+      }
+    }
+
+    &-items {
+      display: flex;
+      flex-wrap: wrap;
+
+      span {
+        font-family: $font-base;
+      }
+    }
+
+    &-item {
+      width: 49%;
+      margin-right: 2%;
+      margin-bottom: 15px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+
+      &.small {
+        width: auto;
+        margin-right: 30px;
+        margin-bottom: 0;
+      }
+    }
+
+    &-slider {
+      &--stats {
+        height: 25px;
+        width: 23px;
+        margin-right: 20px;
+        margin-top: 2px;
+      }
+
+      &--levels {
+        margin-right: 20px;
+        margin-top: 5px;
+      }
+    }
+
+    &-tabs {
+      margin-bottom: 20px;
+
+      span {
+        font-size: 12px;
+        font-family: $font-base;
+      }
+
+      .MuiTabs-indicator {
+        bottom: 3px;
+        background-color: $color-17;
+      }
+    }
+
+    &-button {
+      display: none;
+    }
+
+    &-body-part {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 10px 10px 10px 0;
+
+      img {
+        width: 40px;
+      }
+    }
+
+    &-rarity {
+      display: flex !important;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      button {
+        width: 48%;
+        margin-bottom: 10px;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 4px 2px 3px;
+        color: white;
+        background-color: $gray-2;
+        border-radius: 3px !important;
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: $gray;
+        }
+
+        &.Mui-selected {
+          background-color: $color-17;
+
+          &:hover {
+            background-color: $color-17;
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    width: calc(100% - 380px);
+  }
+
+  &__toggles {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__loading {
+    display: block;
+    width: 200px !important;
+    height: 50px !important;
+    margin: 40px auto;
+
+    &--marketplace {
+      margin: 500px auto;
+    }
+  }
+
+  &__404-title {
+    font-size: 16px;
+    margin-top: -160px;
+  }
+
+  &__404 {
+    width: 500px !important;
+    margin: -60px auto 0;
+    max-width: 100%;
+  }
+
+  &__items {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    overflow: hidden !important;
+  }
+
+  &__item {
+    width: 32%;
+    margin: 0 2% 20px 0;
+    padding: 20px 15px;
+    border: 1px solid $color-8;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $color-8;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  &__pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .Mui-selected {
+      color: #7fffd4 !important;
+      border: 2px solid #7fffd4 !important;
+      background-color: rgba(127, 255, 212, 0.2) !important;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-1200) {
+    display: block;
+
+    &__tab {
+      position: relative;
+      width: 100%;
+      margin-bottom: 20px;
+
+      button {
+        border-radius: 8px !important;
+      }
+
+    }
+
+    &__filter {
+      display: none;
+      width: 100%;
+      position: initial;
+      padding: 15px 15px 10px;
+      margin: 0 0 20px 0;
+
+      &-container {
+        position: static;
+      }
+
+      &--mobile {
+        display: block;
+      }
+
+      &-item {
+        width: auto;
+        margin-right: 20px !important;
+      }
+
+      &-button {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+
+        div {
+          display: flex;
+          align-items: center;
+          padding: 10px 10px 10px 20px;
+        }
+      }
+    }
+
+    &__content {
+      width: 100%;
+    }
+
+    &__item {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 15px 10px 0;
+      border-color: $color-14;
+      margin-right: 0;
+
+      &--knight {
+        padding-top: 30px;
+      }
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-600) {
+    &__tab {
+      span {
+        font-size: 18px;
+      }
+    }
+    &__404 {
+      width: 100% !important;
+      max-width: 320px;
+      margin-top: -20px;
+    }
+
+    &__404-title {
+      margin-top: -100px;
+      font-size: 12px;
+      padding: 0 20px;
+    }
+
+    &__filter {
+      &-item {
+        width: 47%;
+      }
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-414) {
+    &__filter {
+      &-slider {
+        &--stats {
+          margin-top: 8px;
+        }
+
+        &--levels {
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+}

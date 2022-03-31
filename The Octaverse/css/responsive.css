@@ -1,0 +1,257 @@
+
+@media only screen and (max-width: 599px){
+.banner__home_image {
+    width: 100%;
+}
+.banner__home-image--human{
+	right:20%;
+}
+.banner{
+	   height:507px;
+   }
+   .site-logo{
+	   margin-right:0px;
+   }
+}
+
+
+
+
+
+@media (min-width: 600px) and ( max-width:699px){
+   .banner{
+	   height:364px;
+   }
+   img {
+    max-width: 80%;
+}
+.banner__home_image {
+    width: 100%;
+}
+.banner__home-image--orc {
+    left: 30%;
+    bottom: 10%;
+}
+.banner__home-image--human{
+	right:20%;
+	 bottom: -40%;
+}
+}
+
+
+@media (max-width: 767px){
+   .weapons_grid_1{
+		flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+	}
+	
+	.page-flex-col1{
+		max-width:100%;
+	}
+	
+	.filter_header{
+		display:block;
+	}
+	.btn--small{
+		margin-top:10px;
+	}
+.market_sub1{
+	width:100%;
+}
+.page-section{
+	width:initial;
+}
+.market{
+	display:block;
+}
+.race-ele button{
+	width:100%;
+}
+}
+
+@media (min-width: 700px) and ( max-width:767px){
+   .banner{
+	   height:450px;
+   }
+   img {
+    max-width: 100%;
+}
+.banner__home_image {
+    width: 100%;
+}
+.banner__home-image--orc {
+    left: 30%;
+    bottom: 10%;
+}
+.banner__home-image--human{
+	right:20%;
+	 bottom: -40%;
+}
+}
+
+@media (min-width: 100px) and ( max-width:766px){
+	.war_class{
+		width:100%;
+	}
+	.feature-item{
+		height: 458px;
+        width: 50%;
+        margin: auto;
+	}
+	
+	.next {
+    right: -80%;
+	}
+}
+
+@media (min-width: 767px) and ( max-width:1000px){
+   .weapons_grid_1{
+		flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+	}
+	.war_class{
+		width:50%;
+	}
+	.feature-item{
+		height: 458px;
+        width: 50%;
+        margin: auto;
+	}
+	.next {
+    right: -85%;
+	}
+}
+
+@media only screen and (max-width: 1000px){
+	.intro{
+		display:block;
+	}
+	.intro__content{
+		max-width:initial;
+	}
+	.binance_container{
+		height:549px;
+	}	
+	.intro__video {
+	 background-image: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	height: 172px;
+	 padding-bottom:0px;
+	}
+	
+	.intro__video h2{
+		position:relative;
+		top:0;
+		left:0;
+	}
+}
+@media only screen and (max-width: 400px){
+.binance_container{
+		height:643px;
+	}
+}
+
+
+
+@media only screen and (min-width: 1300px){
+/* .banner__home_image {
+	width:50%;
+} */
+/*  .banner {
+	height:1067px;
+}
+ 
+.container {
+		max-width: 1618px;
+	}
+	
+.header__links{
+	font-size:35px;
+}
+
+.user-panel a{
+	font-size:25px;
+} */
+
+.banner__home{
+	background-position: top;
+}
+.banner__home_image{
+	width:60%;
+}
+} 
+
+@media (min-width: 1651px) and ( max-width:1899px){
+/* 	.banner__home-image--orc{
+	left:15%;
+}
+.banner__home-image--human{
+	right:300px;
+	bottom:-142px;
+} */
+.banner__home_image{
+	width:50%;
+}
+.header__links{
+	font-size:30px;
+}
+
+.user-panel a{
+	font-size:20px;
+}
+}
+
+@media (min-width: 1500px) and ( max-width:1650px){
+	.banner__home-image--orc{
+	left:15%;
+}
+.banner__home-image--human{
+	right:300px;
+	bottom:-142px;
+}
+}
+
+@media only screen and (min-width: 1900px){
+/* .banner__home_image {
+	width:50%;
+} */
+ .banner {
+	height:1067px;
+}
+ 
+.container {
+		max-width: 1618px;
+	}
+	
+.header__links{
+	font-size:35px;
+}
+
+.user-panel a{
+	font-size:25px;
+}
+
+.banner__home{
+	background-position: top;
+}
+img {
+    max-width: 80%;
+}
+.banner__home-image--orc{
+	left:15%;
+}
+.banner__home-image--human{
+	right:300px;
+}
+.banner__home_image{
+	width:90%;
+}
+} 
+
+
+
+
